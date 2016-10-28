@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav>
+  <ul class="nav navbar-nav navbar-center">
+    <li><a href="/">Home</a></li>
+    <li><a href="/ideas">Ideas</a></li>
+    <li><a href="/notices">Notices</a></li>
+  </ul>
+</nav>
+<div class="center jumbotron"></div>
 <%= yield %>
 
 </body>
