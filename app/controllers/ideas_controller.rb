@@ -1,10 +1,20 @@
 class IdeasController < ApplicationController
   before_action :set_idea, only: [:show, :edit, :update, :destroy]
 
+  
+
   # GET /ideas
   # GET /ideas.json
   def index
     @ideas = Idea.all
+    
+    is_logged_in = true
+    
+    if is_logged_in == false
+      render :nothing => true
+    else
+      render 'index'
+    end
   end
 
   # GET /ideas/1
