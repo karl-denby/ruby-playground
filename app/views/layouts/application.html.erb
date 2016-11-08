@@ -1,3 +1,13 @@
+<% content_for :login_info do %>
+    <% if logged_in? %>
+        <p>Hello <%= current_user.name %>
+        <% link_to 'logout', [:about, @id] %>
+        </p>
+    <% else %>
+        <p>Please login <a href="/login">here</a></p>
+    <% end %>
+<% end %>
+
 <!DOCTYPE html>
 <html>
 <head>
