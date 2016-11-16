@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-  resources :ideas
-  resources :notices
   resources :about
   resources :users
 
