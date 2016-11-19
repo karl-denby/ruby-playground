@@ -1,13 +1,3 @@
-<% content_for :login_info do %>
-    <% if logged_in? %>
-        <p>Hello <%= current_user.name %>
-        <% link_to 'logout', [:about, @id] %>
-        </p>
-    <% else %>
-        <p>Please login <a href="/login">here</a></p>
-    <% end %>
-<% end %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +8,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% content_for :login_info do %>
+    <% if logged_in? %>
+        <p>Hello <%= current_user.name %>, 
+        <a href="/logout">logout?</a>
+        </p>
+    <% else %>
+        <p>Please login <a href="/login">here</a></p>
+    <% end %>
+<% end %>
+
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
+
     <div class="brand">Karl Denby</div>
     <div class="address-bar"> Android | Python | Life </div>
 
