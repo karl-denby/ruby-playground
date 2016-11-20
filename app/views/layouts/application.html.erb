@@ -10,11 +10,10 @@
 <body>
 <% content_for :login_info do %>
     <% if logged_in? %>
-        <p>Hello <%= current_user.name %>, 
-        <a href="/logout">logout?</a>
-        </p>
+        <p>Hello <%= link_to current_user.name, current_user %>, 
+        <%= link_to "Logout", logout_path, method: :delete %></p>
     <% else %>
-        <p>Please login <a href="/login">here</a></p>
+        <p>Please <%= link_to "Login", login_path %></p>
     <% end %>
 <% end %>
 
