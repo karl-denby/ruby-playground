@@ -1,24 +1,24 @@
+# Rails Playground
+## About
+This project is not meant to do anything useful.  If it does its by pure coincidence and you should not expect it to keep doing it.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+I built this just while experimenting with RoR
 
+## Install
 
-Welcome to your Rails project on Cloud9 IDE!
+###### Cloud9
+If you create a cloud9 machine it should run straight away after doing the usual steps...
 
-To get started, just do the following:
+1. bin/bundle Install
+2. rake db:create
+3. rake db:migrate
+4. rake db:seed
+5. rails server
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://rails-playground-karldenby.c9users.io/).
+###### Windows Subsystem for Linux / Bash on Ubuntu on Windows
+I followed the instructions on this [link](http://daverupert.com/2016/06/ruby-on-rails-on-bash-on-ubuntu-on-windows/) to get rails 2.3 under Windows, then I ran
 
-Happy coding!
-The Cloud9 IDE team
+    # sudo bin/rails setup
 
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+###### Other
+I'll add more as I try them out.
