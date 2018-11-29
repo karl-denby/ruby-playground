@@ -5,7 +5,7 @@ gem 'bcrypt', '3.1.12'
 # bootstrap saas
 gem 'bootstrap-sass', '3.3.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11'
+gem 'rails', '5.2.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '1.3.13'
 # Use SCSS for stylesheets
@@ -45,7 +45,9 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   # rails footnotes
-  gem 'rails-footnotes', '~> 4.0'
+  #gem 'rails-footnotes', '~> 4.0'
+
+  gem 'rails-controller-testing'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
